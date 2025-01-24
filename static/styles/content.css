@@ -1,0 +1,171 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: white;
+  opacity: 0;
+  /* Початково приховуємо тіло */
+  animation: fadeIn 1.5s ease-in-out forwards;
+  /* Анімація на 2 секунди */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* Початкова прозорість */
+  }
+
+  100% {
+    opacity: 1;
+    /* Кінцева непрозорість */
+  }
+}
+
+/* Стиль для тексту */
+span {
+  font-style: italic;
+}
+
+/* Контейнер з портфоліо */
+.content {
+  display: inline-block;
+  border-style: solid;
+  padding: 20px;
+}
+
+
+
+
+.text {
+  padding-left: 15px;
+  color: black;
+  font-size: 2em;
+  position: absolute;
+  left: 5em;
+  right: 5em;
+}
+
+.text>h1 {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+}
+
+
+.about_me {
+  text-align: center;
+}
+
+.h1-conteiner {
+  margin: 0%;
+  padding: 0%;
+  gap: 0;
+}
+
+.h1-zagolovok {
+  width: 8em;
+  position: absolute;
+  left: 1em;
+  color: white;
+  padding: 10px;
+  font-size: 5em;
+  transform: translateX(-100%);
+  /* Початковий стан: за межами екрану ліворуч */
+  animation: slideIn 1.5s ease-out forwards;
+  /* Анімація тривалістю 1.5с */
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+    /* Текст поза екраном */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* Текст з’явився */
+  }
+}
+
+.img-fon1 {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* Для мобільних телефонів */
+@media (max-width: 600px) {
+  .text {
+    font-size: 14px;
+    padding: 10px;
+    grid-row: auto;
+  }
+
+  .h1-zagolovok {
+    top: 5em;
+    font-size: 1em;
+  }
+
+}
+
+/* Для планшетів */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .fon {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .h1-zagolovok {
+    top: 3.5em;
+    font-size: 3em;
+  }
+}
+
+/* Для десктопів */
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .h1-zagolovok {
+    width: 8em;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    color: white;
+    padding: 10px;
+    font-size: 5em;
+  }
+
+  .img-fon1 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .h1-zagolovok {
+    width: 8em;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    color: white;
+    padding: 10px;
+    font-size: 12em;
+  }
+
+  .img-fon1 {
+    display: block;
+    width: 100%;
+  }
+}
+
+.instagram p {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}

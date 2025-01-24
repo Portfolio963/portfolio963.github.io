@@ -1,0 +1,58 @@
+body { 
+    padding: 0; 
+    margin: 0; 
+    display: block;
+    background-color: white;
+    opacity: 0; /* Початково приховуємо тіло */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Анімація на 2 секунди */
+  } 
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Початкова прозорість */
+    }
+    100% {
+      opacity: 1; /* Кінцева непрозорість */
+    }
+  }
+
+
+  .conteiner-fluid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel {
+    display: block;
+    width: 20em;
+    height: 30em;
+    position: absolute;
+    top: 13em;
+  }
+
+.text {
+  font-size: 3em;
+  position: relative;
+  top: 1.7em;
+  text-align: center;
+  }
+
+.content {
+  text-align: center;
+  position: relative;
+  top: 40em;
+}
+
+  .text1 {
+    font-size: 1.5em;
+  }
+
+  .text2 {
+    position: relative;
+    left: 1.5em;
+  }
+
+  .long {
+    position: relative;
+    left: 1em;
+  }
